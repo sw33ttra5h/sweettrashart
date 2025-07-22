@@ -1,0 +1,336 @@
+/*==========================*/
+/*         FONTS           */
+/*==========================*/
+
+@font-face {
+    font-family: bastliga;
+    src: url("fonts/bastliga.otf");
+}
+
+@font-face {
+    font-family: bunny;
+    src: url("fonts/bunny.otf");
+}
+
+@font-face {
+    font-family: milky;
+    src: url("fonts/milky\ DEMO.ttf");
+}
+
+@font-face {
+    font-family: munday;
+    src: url("fonts/munday.ttf");
+}
+
+@font-face {
+    font-family: rocky;
+    src: url("fonts/rocky.ttf");
+}
+
+@font-face {
+    font-family: rustic;
+    src: url("fonts/rustic.otf");
+}
+/* rustic works well as a header font because it's stylized and readable at large sizes */
+
+
+/*==========================*/
+/*       GLOBAL RESET       */
+/*==========================*/
+
+* {
+    padding: 0;
+    margin: 0; /* 'auto 0' is invalid; use '0 auto' if you want vertical margins = 0, horizontal = centered */
+    box-sizing: border-box; 
+    /* box-sizing ensures padding and border are included in total width/height — prevents layout breakage */
+}
+
+
+/*==========================*/
+/*        VARIABLES         */
+/*==========================*/
+
+/* :root is the top-level scope for CSS variables. It's like a global settings section. */
+:root {
+    --primary: hsla(110, 97%, 63%, 0.65);   /* A soft green with 65% opacity */
+    --secondary: hsla(304, 96%, 62%, 0.65); /* A pink-magenta tone */
+    /* hsla stands for hue, saturation, lightness, alpha — more flexible than hex */
+}
+
+
+/*==========================*/
+/*        BASE STYLES       */
+/*==========================*/
+
+html {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+img {
+    width: 400px;
+    height: auto; /* This keeps proportions while resizing */
+}
+
+
+/*==========================*/
+/*        HERO SECTION      */
+/*==========================*/
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    background: 
+        linear-gradient(135deg, var(--primary), var(--secondary)), 
+        url("images/hero-test-2.jpg") no-repeat center/cover;
+
+    /* The slash '/' separates position from size: "center / cover"
+       - "center" centers the image
+       - "cover" scales the image to cover the whole element */
+    
+    color: white;
+}
+
+.container {
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    display: flex; 
+    align-items: center; /* vertically aligns children in center */
+    justify-content: center; /* horizontally centers children */
+    text-align: center;
+}
+
+.logo-img {
+    display: block; /* removes default inline spacing under images */
+}
+
+.container .info h1 {
+    font-family: rustic;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.container .info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.container .info p {
+    font-size: 1.2rem; /* remove space between number and unit */
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.container .info a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 1.8rem;
+    padding: 0.5em 2em;
+    margin-top: 2rem;
+}
+
+
+/*==========================*/
+/*     NAVIGATION SECTION   */
+/*==========================*/
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: blue;
+    color: black;
+    padding: 0.5em 2em;
+    position: sticky;
+    top: 0;
+}
+
+.nav-links {
+    /* Empty block, but may be useful later for spacing or layout */
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 0.3em 2em;
+}
+
+.nav-links a:hover {
+    transition: 0.3s;
+    background-color: grey;
+    color: white;
+}
+
+
+/*==========================*/
+/*      ABOUT SECTION       */
+/*==========================*/
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.row {
+    width: 100%;
+    padding: 50px 100px;
+}
+
+.image-section {
+    width: 50%;
+    float: right;
+    max-height: 500px;
+}
+
+.image-section img {
+    display: block;
+    margin: auto; /* only works if display is block */
+    justify-content: center; /* doesn’t affect images; used in flex */
+    max-width: auto; /* invalid — use width or leave it out */
+    max-height: 500px;
+}
+
+.content {
+    width: 40%;
+    float: left;
+    margin-left: 50px;
+    max-height: 500px;
+    overflow: scroll;
+}
+
+.content h1 {
+    font-family: rustic;
+    font-size: 90px;
+    letter-spacing: 3.5px;
+    margin-top: 25px;
+    color: #222;
+}
+
+.content h2 {
+    font-size: 40px;
+    color: #b60112;
+    margin-top: 25px;
+}
+
+.content p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+/*==========================*/
+/*      GALLERY SECTION     */
+/*==========================*/
+
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 11;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 1rem;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    /* object-fit: cover prevents distortion but may crop the image */
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+/*==========================*/
+/*        CONTACT           */
+/*==========================*/
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* Flex makes children line up horizontally by default (useful for layouts).
+       Inline elements can't use width/height properly, but flex children can. */
+}
+
+.social-media {
+    /* Reserved for icon or link styling */
+}
+
+.socials img {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+}
+
+.contact-blurb h1 {
+    /* Placeholder for styling title text */
+}
+
+.contact-blurb {
+    /* Placeholder for layout or spacing */
+}
+
+
+/*==========================*/
+/*     MEDIA QUERIES        */
+/*==========================*/
+
+/* This makes the layout responsive on small screens */
+@media screen and (max-width: 768px) {
+
+    .image-section {
+        width: 100%;
+        float: none;
+    }
+
+    .content {
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+    }
+}

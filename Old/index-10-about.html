@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Reference: Assignment link for context 
+        https://unlv.instructure.com/courses/178716/assignments/2194117 
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site favicon -->
+    <link rel="icon" href="#" />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Art of Sweetrash</title>
+</head>
+
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <!-- Logo container (styled via CSS background) -->
+        <div class="img-logo"></div>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main>
+
+        <!-- ====== HERO SECTION ====== -->
+        <section class="hero">
+            <div class="container">
+                <!-- Logo image -->
+                <div class="logo-img">
+                    <img src="images/logo-test.png" alt="Sweetrash Logo">
+                </div>
+
+                <!-- Intro text and call-to-action -->
+                <div class="info">
+                    <h1>Sweettrash's portfolio</h1>
+                    <h2>Scroll for information on me and my portfolio!</h2>
+                    <a href="#">Click me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== NAVIGATION LINKS ====== -->
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="index.html#about">About Me</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- ====== ABOUT SECTION ====== -->
+        <section id="about">
+            <div class="wrapper">
+                <div class="row">
+
+                    <!-- Mascot/branding image -->
+                    <div class="image-section">
+                        <img src="images/mascot.png" alt="Mascot illustration">
+                    </div>
+
+                    <!-- About Me content -->
+                    <div class="content">
+                        <h1>About Me</h1>
+                        <h2>Some text</h2>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            <!-- Replace with actual bio content -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!-- ====== IMAGE SLIDER / GALLERY ====== -->
+        <section id="gallery">
+            <div class="slider-wrapper">
+
+                <!-- Slider image track -->
+                <div class="slider">
+                    <img id="slide-1" src="images/art/1.jpg" alt="Slide 1"/>
+                    <img id="slide-2" src="images/art/2.png" alt="Slide 2"/>
+                    <img id="slide-3" src="images/art/3.jpg" alt="Slide 3"/>
+                    <img id="slide-4" src="images/art/4.png" alt="Slide 4"/>
+                    <img id="slide-5" src="images/art/5.jpg" alt="Slide 5"/>
+                    <img id="slide-6" src="images/art/6.jpg" alt="Slide 6"/>
+                    <img id="slide-7" src="images/art/7.jpg" alt="Slide 7"/>
+                    <img id="slide-8" src="images/art/8.jpg" alt="Slide 8"/>
+                    <img id="slide-9" src="images/art/9.jpg" alt="Slide 9"/>
+                    <img id="slide-10" src="images/art/10.jpg" alt="Slide 10"/>
+                </div>
+
+                <!-- Slider navigation links -->
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                    <a href="#slide-4"></a>
+                    <a href="#slide-5"></a>
+                    <a href="#slide-6"></a>
+                    <a href="#slide-7"></a>
+                    <a href="#slide-8"></a>
+                    <a href="#slide-9"></a>
+                    <a href="#slide-10"></a>
+
+                </div>
+            </div> 
+        </section>
+
+        <!-- ====== CONTACT SECTION ====== -->
+        <section id="contact">
+
+            <!-- Social media icons and mascot -->
+            <div class="social-media">
+                <img src="images/mascot.png" alt="Mascot"/>
+                <div class="socials">
+                    <a href="#"><img src="images/insta.png" alt="Instagram"/></a>
+                    <a href="#"><img src="images/tumb.PNG" alt="Tumblr"/></a>
+                    <a href="#"><img src="images/pint.png" alt="Pinterest"/></a>
+                </div>
+            </div>
+
+            <!-- Contact form and message -->
+            <div class="contact-container">
+                <!--Form tags, in general, open up HTML form for user input, not just emails, but used for any kind
+                actions specify where to send the information inputed-->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>
+                            Get in touch
+                        </h2>
+                    </div>
+                    <!--Specifies a field in which user can enter data-->
+                    <!--Name: Name of the form control. Submitted with the form as part of a name/value pair-->
+                    <!--Placeholder: Text that appears in the form control when it has no value set-->
+                    <input type="hidden" name="access_key" value="605a3592-500f-4f98-81f3-8036a0ac1b0f">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit"> Submit <img src="" alt="" ></button>
+                </form>
+
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <p class="copyright">
+            © Doggone Design. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

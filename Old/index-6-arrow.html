@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Reference: Assignment link for context 
+        https://unlv.instructure.com/courses/178716/assignments/2194117 
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site favicon -->
+    <link rel="icon" href="#" />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Art of Sweetrash</title>
+</head>
+
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <!-- Logo container (styled via CSS background) -->
+        <div class="img-logo"></div>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main>
+
+        <!-- ====== HERO SECTION ====== -->
+        <section class="hero">
+            <div class="container">
+                <!-- Logo image -->
+                <div class="logo-img">
+                    <img src="images/logo-test.png" alt="Sweetrash Logo">
+                </div>
+
+                <!-- Intro text and call-to-action -->
+                <div class="info">
+                    <h1>Sweettrash's portfolio</h1>
+                    <h2>Scroll for information on me and my portfolio!</h2>
+                    <a href="#">Click me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== NAVIGATION LINKS ====== -->
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="index.html#about">About Me</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- ====== ABOUT SECTION ====== -->
+        <section id="about">
+            <div class="wrapper">
+                <div class="row">
+
+                    <!-- Mascot/branding image -->
+                    <div class="image-section">
+                        <img src="images/mascot.png" alt="Mascot illustration">
+                    </div>
+
+                    <!-- About Me content -->
+                    <div class="content">
+                        <h1>About Me</h1>
+                        <h2>Some text</h2>
+                        <p>
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                            <!-- Replace with actual bio content -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== IMAGE SLIDER / GALLERY ====== -->
+        <section id="gallery">
+            <div class="slider-wrapper">
+
+                <!-- Slider image track -->
+                <div class="slider">
+                    <img id="slide-1" src="images/slide1.jpg" alt="Slide 1"/>
+                    <img id="slide-2" src="images/slide2.png" alt="Slide 2"/>
+                    <img id="slide-3" src="images/slide3.PNG" alt="Slide 3"/>
+                </div>
+
+                <!-- Slider navigation links -->
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div> 
+        </section>
+
+        <!-- ====== CONTACT SECTION ====== -->
+        <section id="contact">
+
+            <!-- Social media icons and mascot -->
+            <div class="social-media">
+                <img src="images/mascot.png" alt="Mascot"/>
+                <div class="socials">
+                    <a href="#"><img src="images/insta.png" alt="Instagram"/></a>
+                    <a href="#"><img src="images/tumb.PNG" alt="Tumblr"/></a>
+                    <a href="#"><img src="images/pint.png" alt="Pinterest"/></a>
+                </div>
+            </div>
+
+            <!-- Contact form and message -->
+            <div class="contact-blurb">
+                <h1>Have questions? Interested in business?</h1>
+                <h2>Shoot me an email!</h2>
+
+                <!-- Contact form -->
+                <div class="email">
+                    <form action="/action_page.php">
+                        <label for="fname">First name: </label>
+                        <input type="text" id="fname" name="fname"><br><br>
+
+                        <label for="lname">Last name: </label>
+                        <input type="text" id="lname" name="lname"><br><br>
+
+                        <label for="message">Message: </label>
+                        <input type="text" id="message" name="message"><br><br>
+
+                        <input type="submit" value="Submit">
+                    </form>
+                    <p>Click on the submit button to submit the form.</p>
+                </div>
+            </div>
+            
+            <!-- (Optional empty div – consider removing if unused) -->
+            <div></div>
+
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <p class="copyright">
+            © Doggone Design. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
