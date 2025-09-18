@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="email-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact-container">
+        <!--Form tags, in general, open up HTML form for user input, not just emails, but used for any kind
+        actions specify where to send the information inputed-->
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>
+                    Get in touch
+                </h2>
+            </div>
+            <!--Specifies a field in which user can enter data-->
+            <!--Name: Name of the form control. Submitted with the form as part of a name/value pair-->
+            <!--Placeholder: Text that appears in the form control when it has no value set-->
+            <input type="hidden" name="access_key" value="605a3592-500f-4f98-81f3-8036a0ac1b0f">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit"> Submit <img src="" alt="" ></button>
+        </form>
+        <div class="contact-right">
+            <img src="#">
+
+
+        </div>
+    </div>
+</body>
+</html>

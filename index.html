@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Reference: Assignment link for context 
+        https://unlv.instructure.com/courses/178716/assignments/2194117 
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site favicon -->
+    <link rel="icon" href="#" />
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Art of Sweetrash</title>
+</head>
+
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header>
+        <!-- Logo container (styled via CSS background) -->
+        <div class="img-logo"></div>
+    </header>
+
+    <!-- ====== MAIN CONTENT ====== -->
+    <main>
+
+        <!-- ====== HERO SECTION ====== -->
+        <section class="hero">
+            <div class="container">
+                <!-- Logo image -->
+                <div class="logo-img">
+                   
+                </div>
+
+                <!-- Intro text and call-to-action -->
+                <div class="info">
+                    <img src="images/logo.png" alt="Sweetrash Logo">
+                    <h2>Scroll for information on me and my portfolio!</h2>
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== NAVIGATION LINKS ====== -->
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="index.html#about">About Me</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contact">Contact</a>
+            </div>
+        </div>
+
+        <!-- ====== ABOUT SECTION ====== -->
+        <section id="about">
+            <div class="wrapper">
+                <div class="row">
+
+                    <!-- Mascot/branding image -->
+                    <div class="image-section">
+                        <img src="images/about-img.png" alt="Mascot illustration">
+                    </div>
+
+                    <!-- About Me content -->
+                    <div class="content">
+                        <h1>About Me</h1>
+
+                        <p>
+                            "Hey there, and thanks for visiting! I’m a concept artist and illustrator who specializes in </br> storybook illustrations and game art. Whether it’s crafting immersive worlds for books or creating captivating visuals for games, I strive to make every piece of art radiate story and imagination."
+                            <!-- Replace with actual bio content -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====== IMAGE SLIDER / GALLERY ====== -->
+        <section id="gallery">
+            <div class="container">
+            <div class="box">
+                <!--Images are broken up into 3 columns-->
+                <div class="dream">
+                    <img src="images/art/1.jpg">
+                    <img src="images/art/2.png">
+                    <img src="images/art/3.jpg">
+                    <img src="images/art/4.png">
+                    <img src="images/art/5.jpg">
+                </div>
+                
+                <div class="dream">
+                    <img src="images/art/6.jpg">
+                    <img src="images/art/7.jpg">
+                    <img src="images/art/8.jpg">
+                    <img src="images/art/9.jpg">
+                    <img src="images/art/11.png">
+                
+                </div>
+                
+                <div class="dream">
+                    <img src="images/art/12.png">
+                    <img src="images/art/13.png">
+                    <img src="images/art/14.png">
+                    <img src="images/art/15.png">
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- ====== CONTACT SECTION ====== -->
+        <section id="contact">
+
+            <!-- Social media icons and mascot -->
+            <div class="social-media">
+                <img class ="encourage" src="images/emal.PNG" alt="Mascot"/>
+                <div class="socials">
+                    <a href="https://www.instagram.com/sweettrashart" target="_blank"><img src="images/insta.png" alt="Instagram"/></a>
+                    <a href="https://sweettrash.tumblr.com"  target="_blank"><img src="images/tumb.PNG" alt="Tumblr"/></a>
+                    <a href="https://x.com/sweettrashart"  target="_blank"><img src="images/x-symb.png" alt="X/Twitter"/></a>
+                </div>
+            </div>
+
+            <!-- Contact form and message -->
+            <div class="contact-container">
+                <!--Form tags, in general, open up HTML form for user input, not just emails, but used for any kind
+                actions specify where to send the information inputed-->
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>
+                            Get in touch
+                        </h2>
+                    </div>
+                    <!--Specifies a field in which user can enter data-->
+                    <!--Name: Name of the form control. Submitted with the form as part of a name/value pair-->
+                    <!--Placeholder: Text that appears in the form control when it has no value set-->
+                    <input type="hidden" name="access_key" value="605a3592-500f-4f98-81f3-8036a0ac1b0f">
+                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                    <button type="submit"> Submit <img src="" alt="" ></button>
+                </form>
+
+        </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+
+    </footer>
+
+</body>
+</html>
